@@ -1,0 +1,135 @@
+.Signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.trial {
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 0 10px 5px -2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 60%;
+  padding: 20px;
+  border: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+.trialHover {
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 0 10px 5px -2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 60%;
+  padding: 20px;
+  border: none;
+  color: white;
+  transition: all 0.1s;
+  transform: translate(0, -5px);
+}
+
+.form {
+  width: 60%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-top: 20px;
+  row-gap: 20px;
+  border-radius: 10px;
+}
+
+.name,
+.lastName,
+.email,
+.password {
+  padding: 5px;
+  margin: 0px 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.nameEmpty,
+.lastNameEmpty,
+.emailEmpty,
+.passwordEmpty {
+  padding: 5px;
+  margin: 0px 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 3px rgba(211, 16, 16, 0.4);
+  background-image: url("C:\Users\domin\OneDrive\Pulpit\Frontend Mentor\intro-component-with-signup-form\src\images\icon-error.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#top {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  border: none;
+  box-shadow: 0 5px 1px -2px rgba(20, 126, 64, 0.5);
+  cursor: unset;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  left: 10%;
+}
+
+.btnHover {
+  cursor: pointer;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  border: none;
+  box-shadow: 0 5px 1px -2px rgba(20, 126, 64, 0.5);
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  left: 10%;
+}
+
+.term {
+  text-align: center;
+  font-size: 17px;
+}
+
+.terms {
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  left: -20px;
+}
+
+span {
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  .Signup {
+    position: absolute;
+    top: 20%;
+    width: 100vw;
+  }
+
+  .trial {
+    width: 90%;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .terms {
+    text-align: center;
+    margin-left: 10%;
+  }
+}
